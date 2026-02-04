@@ -36,4 +36,15 @@ print("\n Confusion Matrix:")
 print(confusion_matrix(y_test,y_pred))
 
 print("\n Classification Report:")
+
 print(classification_report(y_test,y_pred))
+
+# FEATURE IMPORTANCE
+
+importance = pd.DataFrame({
+    "Feature": x.columns,
+    "Coefficient": model.coef_[0]
+}).sort_values(by="Coefficient", ascending=False)
+
+print("\nFeature Importance:")
+print(importance)
