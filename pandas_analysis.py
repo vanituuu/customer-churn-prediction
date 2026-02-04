@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load data
-df = pd.read_csv("data/customers.csv")
+df = pd.read_csv("customers_churn_2000.csv")
 print(df)
 
 print("Shape:", df.shape)
@@ -32,4 +32,5 @@ high_risk = df[
 
 print("\nHigh-risk customers:")
 print(high_risk)
+
 
