@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-df = pd.read_csv("data/customers.csv")
+df = pd.read_csv("customers_churn_2000.csv")
 
 # 1. Basic info
 print("Shape:", df.shape)
@@ -40,6 +40,7 @@ plt.show()
 sns.boxplot(x='churn', y='monthly_usage', data=df)
 plt.title("Monthly Usage vs Churn")
 plt.show()
+
 
 
 
