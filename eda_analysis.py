@@ -31,3 +31,15 @@ plt.figure(figsize=(8,6))
 sns.heatmap(df.corr(), annot=True, cmap="coolwarm")
 plt.title("Correlation Heatmap")
 plt.show()
+
+# 7. Boxplot
+sns.boxplot(x='churn', y='tenure', data=df)
+plt.title("Tenure vs Churn")
+plt.show()
+
+sns.boxplot(x='churn', y='monthly_usage', data=df)
+plt.title("Monthly Usage vs Churn")
+plt.show()
+
+
+
